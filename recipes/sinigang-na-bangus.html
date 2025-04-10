@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinigang na Bangus Recipe | Knorr</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --knorr-green: #007A33;
+            --knorr-yellow: #FFC220;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'knorr-green': '#007A33',
+                        'knorr-yellow': '#FFC220',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-knorr-green">Knorr</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/recipes.html" class="text-knorr-green font-semibold">Recipes</a>
+                    <a href="/products.html" class="text-gray-700 hover:text-knorr-green">Products</a>
+                    <a href="/nutri-sarap.html" class="text-gray-700 hover:text-knorr-green">Nutri-Sarap</a>
+                    <a href="/stories.html" class="text-gray-700 hover:text-knorr-green">Stories</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-knorr-green"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-20 pb-16">
+        <!-- Recipe Hero -->
+        <section class="relative h-[400px]">
+            <img src="https://assets.unileversolutions.com/recipes-v3/175515-default.png" 
+                 alt="Sinigang na Bangus" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                        Sinigang na Bangus
+                    </h1>
+                    <p class="text-xl text-white max-w-2xl">
+                        A sour and savory Filipino fish soup that's perfect for rainy days
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Content -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto">
+                    <!-- Recipe Info -->
+                    <div class="grid md:grid-cols-4 gap-8 mb-12">
+                        <div class="text-center">
+                            <div class="text-4xl text-knorr-green mb-2">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <p class="font-semibold">Prep Time</p>
+                            <p>20 mins</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl text-knorr-green mb-2">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <p class="font-semibold">Cook Time</p>
+                            <p>40 mins</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl text-knorr-green mb-2">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <p class="font-semibold">Servings</p>
+                            <p>5 people</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl text-knorr-green mb-2">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <p class="font-semibold">Difficulty</p>
+                            <p>Medium</p>
+                        </div>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Ingredients</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                1 large bangus (milkfish), cleaned and cut into serving pieces
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                2 packs Knorr Sinigang sa Sampalok Mix
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                2 pieces tomatoes, quartered
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                1 piece onion, quartered
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                2 pieces eggplant, sliced
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                200g kangkong leaves
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                4 pieces okra
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                2 pieces green chili
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                Fish sauce to taste
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Cooking Instructions</h2>
+                        <ol class="space-y-6">
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">1.</span>
+                                <p>Boil 8 cups of water in a pot.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">2.</span>
+                                <p>Add onions and tomatoes. Cook until tomatoes are soft.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">3.</span>
+                                <p>Add bangus and Knorr Sinigang sa Sampalok Mix. Simmer for 10 minutes.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">4.</span>
+                                <p>Add eggplant and okra. Cook for 5 minutes.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">5.</span>
+                                <p>Add kangkong leaves and green chili.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">6.</span>
+                                <p>Season with fish sauce to taste.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">7.</span>
+                                <p>Serve hot with steamed rice.</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="bg-gray-50 p-6 rounded-lg mb-12">
+                        <h2 class="text-2xl font-bold mb-4">Chef's Tips</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-knorr-yellow mt-1 mr-4"></i>
+                                <p>Clean the bangus thoroughly to avoid a fishy taste.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-knorr-yellow mt-1 mr-4"></i>
+                                <p>Add radish for extra flavor and nutrition.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-knorr-yellow mt-1 mr-4"></i>
+                                <p>Serve with patis (fish sauce) and calamansi on the side.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Nutrition Info -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Nutrition Information</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                <p class="font-semibold">Calories</p>
+                                <p>250 kcal</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                <p class="font-semibold">Protein</p>
+                                <p>22g</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                <p class="font-semibold">Carbs</p>
+                                <p>12g</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                <p class="font-semibold">Fat</p>
+                                <p>15g</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Share -->
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold mb-4">Share this Recipe</h3>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-knorr-green">
+                                <i class="fab fa-facebook text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-knorr-green">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-knorr-green">
+                                <i class="fab fa-pinterest text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-knorr-green">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-knorr-yellow">Home</a></li>
+                        <li><a href="/recipes.html" class="hover:text-knorr-yellow">Recipes</a></li>
+                        <li><a href="/products.html" class="hover:text-knorr-yellow">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-knorr-yellow">Quick Meals</a></li>
+                        <li><a href="#" class="hover:text-knorr-yellow">Healthy Cooking</a></li>
+                        <li><a href="#" class="hover:text-knorr-yellow">Traditional Dishes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about-us.html" class="hover:text-knorr-yellow">About Us</a></li>
+                        <li><a href="/contact.html" class="hover:text-knorr-yellow">Contact</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-knorr-yellow">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2024 Knorr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
