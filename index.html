@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knorr Products, Recipes, Kitchen Tips and Tricks | Knorr</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --knorr-green: #007A33;
+            --knorr-yellow: #FFC220;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'knorr-green': '#007A33',
+                        'knorr-yellow': '#FFC220',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Skip Links -->
+    <div class="sr-only">
+        <a href="#main-content" class="focus:not-sr-only">Skip to main content</a>
+        <a href="#footer" class="focus:not-sr-only">Skip to footer</a>
+        <a href="#search-input" class="focus:not-sr-only">Skip to search</a>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-knorr-green">Knorr</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/recipes.html" class="text-gray-700 hover:text-knorr-green">Recipes</a>
+                    <a href="/products.html" class="text-gray-700 hover:text-knorr-green">Products</a>
+                    <a href="/nutri-sarap.html" class="text-gray-700 hover:text-knorr-green">Nutri-Sarap</a>
+                    <a href="/stories.html" class="text-gray-700 hover:text-knorr-green">Stories</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-knorr-green"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="mt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[500px]">
+            <img src="https://assets.unileversolutions.com/v1/54005240.jpg" 
+                 alt="Nutri Sarap" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <h1 class="text-4xl md:text-6xl text-white font-bold text-center px-4">
+                    Knorr Products, Recipes, Kitchen Tips and Tricks
+                </h1>
+            </div>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Ano'ng hanap natin today?</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="/recipes.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold text-knorr-green mb-2">Quick, easy and delicious recipes</h3>
+                        <p class="text-gray-600">Discover delicious recipes for every occasion</p>
+                    </a>
+                    <a href="/products.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold text-knorr-green mb-2">Products</h3>
+                        <p class="text-gray-600">Explore our range of quality products</p>
+                    </a>
+                    <a href="/nutri-sarap.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold text-knorr-green mb-2">Nutri-Sarap Para sa Malusog na Bukas</h3>
+                        <p class="text-gray-600">Learn about our nutrition initiative</p>
+                    </a>
+                    <a href="/stories.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-semibold text-knorr-green mb-2">Nutri-Sarap Stories of Success</h3>
+                        <p class="text-gray-600">Read inspiring success stories</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Discovery Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4">Discover Nutri-Sarap Recipes</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Our featured dishes are cooked with fresh and nutritious ingredients made more delicious with Knorr.
+                    Discover your own Nutri-Sarap story through our favorite recipes!
+                </p>
+
+                <!-- Recipe Search -->
+                <div class="max-w-xl mx-auto mb-12">
+                    <div class="relative">
+                        <input type="search" 
+                               id="search-input"
+                               placeholder="Search in our recipes" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-knorr-green">
+                        <button class="absolute right-3 top-1/2 transform -translate-y-1/2">
+                            <i class="fas fa-search text-gray-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recipe Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- Recipe Card 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <img src="https://assets.unileversolutions.com/recipes-v3/110276-default.jpg" 
+                             alt="Chicken Tinola" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-4">Chicken Tinola</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>Cooking: 30 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-utensils mr-2"></i>
+                                    <span>Difficulty: Easy</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-hourglass-start mr-2"></i>
+                                    <span>Prep: 20 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-users mr-2"></i>
+                                    <span>Servings: 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <img src="https://assets.unileversolutions.com/recipes-v3/175486-default.jpg" 
+                             alt="Ginisang Monggo" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-4">Ginisang Monggo Recipe</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>Cooking: 30 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-utensils mr-2"></i>
+                                    <span>Difficulty: Easy</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-hourglass-start mr-2"></i>
+                                    <span>Prep: 60 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-users mr-2"></i>
+                                    <span>Servings: 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 3 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <img src="https://assets.unileversolutions.com/recipes-v3/175515-default.png" 
+                             alt="Sinigang na Bangus" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-4">Sinigang na Bangus Recipe</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>Cooking: 40 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-utensils mr-2"></i>
+                                    <span>Difficulty: Medium</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-hourglass-start mr-2"></i>
+                                    <span>Prep: 20 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-users mr-2"></i>
+                                    <span>Servings: 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="/recipes.html" class="inline-block px-8 py-3 bg-knorr-green text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                        More Recipes
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4">Nutri-Sarap Stories of Success</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Real people and stories of success.<br>
+                    Explore how nutritious cooking paved the way for a brighter and healthier future for many!
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <a href="/stories/kwentong-galing-ni-doc-otit.html" class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-knorr-green">Kwentong Galing ni Doc Otit</h3>
+                        </div>
+                    </a>
+                    <a href="/stories/kwentong-gilas-ni-marc-pingris.html" class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-knorr-green">Kwentong Gilas ni Marc Pingris</h3>
+                        </div>
+                    </a>
+                    <a href="/stories/kwentong-talino-ni-teacher-fe.html" class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-knorr-green">Kwentong Talino ni Teacher Fe</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center">
+                    <a href="/stories.html" class="inline-block px-8 py-3 bg-knorr-green text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                        Listen To Their Stories
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutri-Sarap Initiative Section -->
+        <section class="py-16 bg-knorr-green text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Nutri-Sarap para sa Malusog na Bukas</h2>
+                <p class="text-center max-w-2xl mx-auto mb-12">
+                    We are spearheading a movement to help teach Filipinos make more nutritious meals one plate a time. 
+                    For years, we have touched more than a million lives, and we are planning for another in the years to come.
+                </p>
+                <div class="text-center">
+                    <a href="/nutri-sarap.html" class="inline-block px-8 py-3 bg-white text-knorr-green rounded-lg hover:bg-gray-100 transition-colors">
+                        Join Our Movement
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Nutri-Sarap Products</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Our products are new and improved: now containing essential vitamins and minerals to boost immunity.<br>
+                    Together, let's transform one billion meals to become nutritious and delicious.
+                </p>
+
+                <h3 class="text-2xl font-bold mb-8">New in our range</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="/products/chicken-cube.html" class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold text-knorr-green">Knorr Chicken Cube</h4>
+                        </div>
+                    </a>
+                    <a href="/products/pork-cube.html" class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold text-knorr-green">Knorr Pork Cube</h4>
+                        </div>
+                    </a>
+                    <a href="/products/sinigang-sa-sampalok-original.html" class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold text-knorr-green">Knorr Sinigang sa Sampalok Original</h4>
+                        </div>
+                    </a>
+                    <a href="/products/sinigang-na-may-gabi.html" class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold text-knorr-green">Knorr Sinigang na may Gabi</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4">
+                    Get personalized recipes, and exclusive tips and tricks straight to your inbox!
+                </h2>
+                <p class="text-center text-gray-600 mb-8">
+                    Tell us your cooking preferences and we'll do the rest.
+                </p>
+                <div class="text-center">
+                    <a href="/signup.html" class="inline-block px-8 py-3 bg-knorr-green text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                        I'm in!
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#main-content" class="hover:text-knorr-yellow">Main content</a></li>
+                        <li><a href="#footer" class="hover:text-knorr-yellow">Footer</a></li>
+                        <li><a href="#search-input" class="hover:text-knorr-yellow">Search</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/products.html" class="hover:text-knorr-yellow">All Products</a></li>
+                        <li><a href="/products/cubes.html" class="hover:text-knorr-yellow">Cubes</a></li>
+                        <li><a href="/products/seasonings.html" class="hover:text-knorr-yellow">Seasonings</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Recipes</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/recipes.html" class="hover:text-knorr-yellow">All Recipes</a></li>
+                        <li><a href="/recipes/quick-meals.html" class="hover:text-knorr-yellow">Quick Meals</a></li>
+                        <li><a href="/recipes/healthy-cooking.html" class="hover:text-knorr-yellow">Healthy Cooking</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about-us.html" class="hover:text-knorr-yellow">About Us</a></li>
+                        <li><a href="/contact.html" class="hover:text-knorr-yellow">Contact</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-knorr-yellow">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2024 Knorr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
