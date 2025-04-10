@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick, Easy and Delicious Recipes | Knorr</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --knorr-green: #007A33;
+            --knorr-yellow: #FFC220;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .recipe-card {
+            transition: transform 0.3s ease;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'knorr-green': '#007A33',
+                        'knorr-yellow': '#FFC220',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-knorr-green">Knorr</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/recipes.html" class="text-knorr-green font-semibold">Recipes</a>
+                    <a href="/products.html" class="text-gray-700 hover:text-knorr-green">Products</a>
+                    <a href="/nutri-sarap.html" class="text-gray-700 hover:text-knorr-green">Nutri-Sarap</a>
+                    <a href="/stories.html" class="text-gray-700 hover:text-knorr-green">Stories</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-knorr-green"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-20 pb-16">
+        <!-- Hero Section -->
+        <section class="bg-knorr-green text-white py-16">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-bold text-center mb-6">Discover Delicious Recipes</h1>
+                <p class="text-center text-lg max-w-2xl mx-auto">
+                    Explore our collection of quick, easy, and nutritious recipes made more delicious with Knorr.
+                </p>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-xl mx-auto">
+                    <div class="relative">
+                        <input type="search" 
+                               id="recipe-search"
+                               placeholder="Search recipes..." 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-knorr-green">
+                        <button class="absolute right-3 top-1/2 transform -translate-y-1/2">
+                            <i class="fas fa-search text-gray-400"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Grid -->
+        <section class="py-12">
+            <div class="container mx-auto px-4">
+                <div id="recipe-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Recipe Card 1 -->
+                    <a href="/recipes/chicken-tinola.html" class="recipe-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <img src="https://assets.unileversolutions.com/recipes-v3/110276-default.jpg" 
+                             alt="Chicken Tinola" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-4">Chicken Tinola</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>Cooking: 30 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-utensils mr-2"></i>
+                                    <span>Difficulty: Easy</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-hourglass-start mr-2"></i>
+                                    <span>Prep: 20 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-users mr-2"></i>
+                                    <span>Servings: 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Recipe Card 2 -->
+                    <a href="/recipes/ginisang-monggo.html" class="recipe-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <img src="https://assets.unileversolutions.com/recipes-v3/175486-default.jpg" 
+                             alt="Ginisang Monggo" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-4">Ginisang Monggo Recipe</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>Cooking: 30 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-utensils mr-2"></i>
+                                    <span>Difficulty: Easy</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-hourglass-start mr-2"></i>
+                                    <span>Prep: 60 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-users mr-2"></i>
+                                    <span>Servings: 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Recipe Card 3 -->
+                    <a href="/recipes/sinigang-na-bangus.html" class="recipe-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                        <img src="https://assets.unileversolutions.com/recipes-v3/175515-default.png" 
+                             alt="Sinigang na Bangus" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-4">Sinigang na Bangus Recipe</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>Cooking: 40 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-utensils mr-2"></i>
+                                    <span>Difficulty: Medium</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-hourglass-start mr-2"></i>
+                                    <span>Prep: 20 MINS</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-users mr-2"></i>
+                                    <span>Servings: 5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-knorr-yellow">Home</a></li>
+                        <li><a href="/recipes.html" class="hover:text-knorr-yellow">Recipes</a></li>
+                        <li><a href="/products.html" class="hover:text-knorr-yellow">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-knorr-yellow">Quick Meals</a></li>
+                        <li><a href="#" class="hover:text-knorr-yellow">Healthy Cooking</a></li>
+                        <li><a href="#" class="hover:text-knorr-yellow">Traditional Dishes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about-us.html" class="hover:text-knorr-yellow">About Us</a></li>
+                        <li><a href="/contact.html" class="hover:text-knorr-yellow">Contact</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-knorr-yellow">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2024 Knorr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('recipe-search');
+            const recipeCards = document.querySelectorAll('.recipe-card');
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+
+                recipeCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const details = card.querySelector('.grid').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || details.includes(searchTerm)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
