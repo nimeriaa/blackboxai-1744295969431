@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginisang Monggo Recipe | Knorr</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --knorr-green: #007A33;
+            --knorr-yellow: #FFC220;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'knorr-green': '#007A33',
+                        'knorr-yellow': '#FFC220',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-knorr-green">Knorr</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/recipes.html" class="text-knorr-green font-semibold">Recipes</a>
+                    <a href="/products.html" class="text-gray-700 hover:text-knorr-green">Products</a>
+                    <a href="/nutri-sarap.html" class="text-gray-700 hover:text-knorr-green">Nutri-Sarap</a>
+                    <a href="/stories.html" class="text-gray-700 hover:text-knorr-green">Stories</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-knorr-green"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-20 pb-16">
+        <!-- Recipe Hero -->
+        <section class="relative h-[400px]">
+            <img src="https://assets.unileversolutions.com/recipes-v3/175486-default.jpg" 
+                 alt="Ginisang Monggo" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                        Ginisang Monggo
+                    </h1>
+                    <p class="text-xl text-white max-w-2xl">
+                        A hearty Filipino mung bean stew perfect for any day
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Content -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto">
+                    <!-- Recipe Info -->
+                    <div class="grid md:grid-cols-4 gap-8 mb-12">
+                        <div class="text-center">
+                            <div class="text-4xl text-knorr-green mb-2">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <p class="font-semibold">Prep Time</p>
+                            <p>60 mins</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl text-knorr-green mb-2">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <p class="font-semibold">Cook Time</p>
+                            <p>30 mins</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl text-knorr-green mb-2">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <p class="font-semibold">Servings</p>
+                            <p>4 people</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl text-knorr-green mb-2">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <p class="font-semibold">Difficulty</p>
+                            <p>Easy</p>
+                        </div>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Ingredients</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                2 cups mung beans (monggo), soaked overnight
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                2 Knorr Pork Cubes
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                250g pork belly, diced
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                2 cups malunggay leaves
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                4 cloves garlic, minced
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                1 onion, diced
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                2 cups spinach
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                Chicharon for topping
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-knorr-green mr-4"></i>
+                                Salt and pepper to taste
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Cooking Instructions</h2>
+                        <ol class="space-y-6">
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">1.</span>
+                                <p>Boil mung beans in water until soft and mushy. Set aside.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">2.</span>
+                                <p>In a pan, sauté garlic and onion until fragrant.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">3.</span>
+                                <p>Add pork and cook until browned. Add Knorr Pork Cubes.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">4.</span>
+                                <p>Add cooked mung beans and simmer until the mixture thickens.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">5.</span>
+                                <p>Add malunggay leaves and spinach. Cook until wilted.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">6.</span>
+                                <p>Season with salt and pepper to taste.</p>
+                            </li>
+                            <li class="flex">
+                                <span class="font-bold text-knorr-green mr-4">7.</span>
+                                <p>Top with chicharon before serving.</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="bg-gray-50 p-6 rounded-lg mb-12">
+                        <h2 class="text-2xl font-bold mb-4">Chef's Tips</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-knorr-yellow mt-1 mr-4"></i>
+                                <p>Soak mung beans overnight to reduce cooking time.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-knorr-yellow mt-1 mr-4"></i>
+                                <p>Add ampalaya leaves for extra nutrition and authentic taste.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-knorr-yellow mt-1 mr-4"></i>
+                                <p>Serve with steamed rice and fried fish on the side.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Nutrition Info -->
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold mb-6">Nutrition Information</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                <p class="font-semibold">Calories</p>
+                                <p>280 kcal</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                <p class="font-semibold">Protein</p>
+                                <p>18g</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                <p class="font-semibold">Carbs</p>
+                                <p>35g</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                <p class="font-semibold">Fat</p>
+                                <p>12g</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Share -->
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold mb-4">Share this Recipe</h3>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-knorr-green">
+                                <i class="fab fa-facebook text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-knorr-green">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-knorr-green">
+                                <i class="fab fa-pinterest text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-knorr-green">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-knorr-yellow">Home</a></li>
+                        <li><a href="/recipes.html" class="hover:text-knorr-yellow">Recipes</a></li>
+                        <li><a href="/products.html" class="hover:text-knorr-yellow">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-knorr-yellow">Quick Meals</a></li>
+                        <li><a href="#" class="hover:text-knorr-yellow">Healthy Cooking</a></li>
+                        <li><a href="#" class="hover:text-knorr-yellow">Traditional Dishes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about-us.html" class="hover:text-knorr-yellow">About Us</a></li>
+                        <li><a href="/contact.html" class="hover:text-knorr-yellow">Contact</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-knorr-yellow">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2024 Knorr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
