@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-Sarap Para sa Malusog na Bukas | Knorr</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --knorr-green: #007A33;
+            --knorr-yellow: #FFC220;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'knorr-green': '#007A33',
+                        'knorr-yellow': '#FFC220',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-knorr-green">Knorr</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/recipes.html" class="text-gray-700 hover:text-knorr-green">Recipes</a>
+                    <a href="/products.html" class="text-gray-700 hover:text-knorr-green">Products</a>
+                    <a href="/nutri-sarap.html" class="text-knorr-green font-semibold">Nutri-Sarap</a>
+                    <a href="/stories.html" class="text-gray-700 hover:text-knorr-green">Stories</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-knorr-green"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-20 pb-16">
+        <!-- Hero Section -->
+        <section class="relative h-[500px]">
+            <img src="https://images.pexels.com/photos/4259707/pexels-photo-4259707.jpeg" 
+                 alt="Happy family cooking together" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                        Nutri-Sarap Para sa Malusog na Bukas
+                    </h1>
+                    <p class="text-xl text-white max-w-2xl">
+                        Join our movement to make Filipino meals more nutritious and delicious, one plate at a time.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-8">Our Mission</h2>
+                    <p class="text-lg text-gray-600 mb-12">
+                        We are spearheading a movement to help teach Filipinos make more nutritious meals one plate at a time. 
+                        For years, we have touched more than a million lives, and we are planning for another in the years to come.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">What Makes Nutri-Sarap Special</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="text-4xl text-knorr-green mb-4">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Nutritious Ingredients</h3>
+                        <p class="text-gray-600">
+                            Every Knorr product is made with carefully selected ingredients rich in essential nutrients.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="text-4xl text-knorr-green mb-4">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Delicious Taste</h3>
+                        <p class="text-gray-600">
+                            We believe healthy food should taste great. Our products enhance the natural flavors of your dishes.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="text-4xl text-knorr-green mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Community Impact</h3>
+                        <p class="text-gray-600">
+                            Together with our partners, we're helping families across the Philippines eat better.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Stats -->
+        <section class="py-16 bg-knorr-green text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Impact</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold mb-2">1M+</div>
+                        <p>Lives Touched</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">1000+</div>
+                        <p>Community Partners</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">100+</div>
+                        <p>Nutritious Recipes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Movement -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Be Part of the Movement</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Join us in our mission to make Filipino meals more nutritious and delicious. 
+                    Together, we can create a healthier future for generations to come.
+                </p>
+                <a href="/signup.html" class="inline-block px-8 py-3 bg-knorr-green text-white rounded-lg hover:bg-opacity-90 transition-colors">
+                    Join Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-knorr-yellow">Home</a></li>
+                        <li><a href="/recipes.html" class="hover:text-knorr-yellow">Recipes</a></li>
+                        <li><a href="/products.html" class="hover:text-knorr-yellow">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Learn More</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-knorr-yellow">About Nutri-Sarap</a></li>
+                        <li><a href="#" class="hover:text-knorr-yellow">Success Stories</a></li>
+                        <li><a href="#" class="hover:text-knorr-yellow">Join the Movement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/about-us.html" class="hover:text-knorr-yellow">About Us</a></li>
+                        <li><a href="/contact.html" class="hover:text-knorr-yellow">Contact</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-knorr-yellow">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-knorr-yellow"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2024 Knorr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
